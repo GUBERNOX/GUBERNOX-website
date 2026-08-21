@@ -3,8 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+
+    <title>GUBERNOX — Coming Soon</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Page */
+        body {
+            min-height: 100vh;
+            background-color: #06253a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Main content */
+        .container {
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        /* Logo */
+        .logo {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            display: block;
+            margin: 0 auto 35px;
+        }
+
+        /* Coming soon text */
+        .coming-soon {
+            color: #f8e8c7;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .container {
+                width: 92%;
+            }
+
+            .logo {
+                margin-bottom: 25px;
+            }
+
+            .coming-soon {
+                font-size: 13px;
+                letter-spacing: 0.25em;
+            }
+        }
+    </style>
 </head>
+
 <body>
+
+    <main class="container">
+        <img
+            src="logo.png"
+            alt="GUBERNOX"
+            class="logo"
+        >
+
+        <div class="coming-soon">
+            Coming Soon
+        </div>
+    </main>
+
 </body>
 </html>
